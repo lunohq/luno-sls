@@ -1,0 +1,43 @@
+{
+  "name": "slack-notification",
+  "runtime": "babel",
+  "description": "Serverless Lambda function for project: luno",
+  "customName": false,
+  "customRole": false,
+  "handler": "handlers/sns/slack-notification/handler.default",
+  "timeout": 6,
+  "memorySize": 1024,
+  "authorizer": {},
+  "custom": {
+    "excludePatterns": [],
+    "runtime": {
+      "babel": {
+        "presets": [
+          "es2015",
+          "stage-0"
+        ],
+        "plugins": [
+          "transform-runtime"
+        ]
+      }
+    }
+  },
+  "endpoints": [],
+  "events": [
+    {
+      "name": "slackNotification",
+      "type": "sns",
+      "config": {
+        "topicName": "${slackNotificationTopicName}"
+      }
+    }
+  ],
+  "environment": {
+    "SERVERLESS_PROJECT": "${project}",
+    "SERVERLESS_STAGE": "${stage}",
+    "SERVERLESS_REGION": "${region}",
+    "STAGE": "${stage}",
+    "WEBHOOK_URL": "${webhookUrl}"
+  },
+  "vpc": "$${vpcParametersTemplate}"
+}

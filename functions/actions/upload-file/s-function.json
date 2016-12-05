@@ -1,0 +1,37 @@
+{
+  "name": "upload-file",
+  "runtime": "babel",
+  "description": "Serverless Lambda function for project: luno",
+  "customName": false,
+  "customRole": false,
+  "handler": "actions/upload-file/handler.default",
+  "timeout": 300,
+  "memorySize": 1536,
+  "authorizer": {},
+  "custom": {
+    "excludePatterns": [],
+    "runtime": {
+      "babel": {
+        "presets": [
+          "es2015",
+          "stage-0"
+        ],
+        "plugins": [
+          "transform-runtime"
+        ]
+      }
+    }
+  },
+  "endpoints": [],
+  "events": [],
+  "environment": {
+    "SERVERLESS_PROJECT": "${project}",
+    "SERVERLESS_STAGE": "${stage}",
+    "SERVERLESS_REGION": "${region}",
+    "SENTRY_DSN": "${sentryDSN}",
+    "AWS_REGION": "${region}",
+    "BUCKET_NAME": "${fileBucket}",
+    "STAGE": "${stage}"
+  },
+  "vpc": "$${vpcParametersTemplate}"
+}

@@ -1,0 +1,22 @@
+{
+    "Records": [
+        {
+            "EventVersion": "1.0",
+            "EventSubscriptionArn": "arn:aws:sns:us-west-2:487220619225:dev-lunohq-sns-NewTeamTopic-1KPV706VQ33FU:3f98247e-8bd7-4720-98a6-2ab4fbdc5640",
+            "EventSource": "aws:sns",
+            "Sns": {
+                "SignatureVersion": "1",
+                "Timestamp": "2016-04-28T07:49:03.941Z",
+                "Signature": "d8cCewI4CvPHPqrcWgK1lCV/of6SKBUjQg20rPdCZUo9UP1PN4p3VzrjqCoWMirX8AaHCSDrku77EWflUwuuD+d/9d39jC5BW5qILMP8NTIxlAfr2h4zo9CrSbZzZBqHREqpv8I8okavDyBlRn1uX9bFX+Z0uBOsFNB0+HNXHIWPnHLQmyoGzLs07gApolFNDb+urNaX9egnNcL0/udlajVm3WMTOJeuuvgZs7DzpDIbPKYGJWqEYQMTo678TjiKc9swSHraFAGhWpMm/fvZcv1YaiUIRZ16QrwEGq3mGlfV2LPCPwIHErXwNu0ODVkOn0ffivhcHgN+DKktUoEHsA==",
+                "SigningCertUrl": "https://sns.us-west-2.amazonaws.com/SimpleNotificationService-bb750dd426d95ee9390147a5624348ee.pem",
+                "MessageId": "95bf248f-31a7-5b76-be84-6b14f30864ac",
+                "Message": "{\"teamId\": \"T03LRKMJB\"}",
+                "MessageAttributes": {},
+                "Type": "Notification",
+                "UnsubscribeUrl": "https://sns.us-west-2.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-west-2:487220619225:dev-lunohq-sns-NewTeamTopic-1KPV706VQ33FU:3f98247e-8bd7-4720-98a6-2ab4fbdc5640",
+                "TopicArn": "arn:aws:sns:us-west-2:487220619225:dev-lunohq-sns-NewTeamTopic-1KPV706VQ33FU",
+                "Subject": "test"
+            }
+        }
+    ]
+}

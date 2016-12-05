@@ -1,0 +1,16 @@
+{ "Records":
+   [ { "EventSource": "aws:sns",
+       "EventVersion": "1.0",
+       "EventSubscriptionArn": "arn:aws:sns:us-west-2:487220619225:dev-lunohq-empireDaemon-EventsTopic-FCBEETAO3VG5:9031774e-c979-4cd5-a17f-0f4a7c244871",
+       "Sns":
+        { "Type": "Notification",
+          "MessageId": "6a992753-cb62-5999-9b79-68b7832e8ff4",
+          "TopicArn": "arn:aws:sns:us-west-2:487220619225:dev-lunohq-empireDaemon-EventsTopic-FCBEETAO3VG5",
+          "Subject": null,
+          "Message": "{\"Event\":\"restart\",\"Message\":\"mhahn restarted luno-bot\",\"Data\":{\"User\":\"mhahn\",\"App\":\"luno-bot\",\"PID\":\"\",\"Message\":\"\"}}",
+          "Timestamp": "2016-06-22T08:02:20.365Z",
+          "SignatureVersion": "1",
+          "Signature": "C0jO4dvVaPuo5OAeZ7HdSqRnyLrnH2nszYZKljd0yaxrgd1/c5HwjrFtYJSQMnTPnY0Pfy2HqCR4Ggr+Ew+UW1B5qV3sxYxjeZvrC0vyrZ4Qea8qUfH8CyQkztGUsSX4cTRe1ue0nMe1qYJbXU0YKctfpn3KiP/GorFBn8KIOlUZjCEmw90F5WqwV56pdN3PFoQCwz0+mwP6ooyhWE1SPgoDOBptGfgrYUx2NoMgw058m8lwqvxOeB8/mNWVfxT32h2vTeuAWTdf/ImTOOvy31qqAL4eTD1vsSjrBfZvluH6BY3MxAfH9L8ptJJEyvQURaLI73Rq+1zy5HyuQoPS2g==",
+          "SigningCertUrl": "https://sns.us-west-2.amazonaws.com/SimpleNotificationService-bb750dd426d95ee9390147a5624348ee.pem",
+          "UnsubscribeUrl": "https://sns.us-west-2.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-west-2:487220619225:dev-lunohq-empireDaemon-EventsTopic-FCBEETAO3VG5:9031774e-c979-4cd5-a17f-0f4a7c244871",
+          "MessageAttributes": {} } } ] }

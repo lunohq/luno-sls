@@ -1,0 +1,15 @@
+{
+  "name": "upload-file",
+  "version": "0.0.1",
+  "description": "lambda for uploading files from s3 to slack",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "luno-core": "git+https://1d0cdee693b540fb3b9cd603b01834ec45976ce9:x-oauth-basic@github.com/lunohq/luno-core.git#v1.15.0",
+    "hiredis": "^0.4.1"
+  }
+}

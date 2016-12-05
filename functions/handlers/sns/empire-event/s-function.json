@@ -1,0 +1,42 @@
+{
+  "name": "empire-event",
+  "runtime": "babel",
+  "description": "Serverless Lambda function for project: luno",
+  "customName": false,
+  "customRole": false,
+  "handler": "handlers/sns/empire-event/handler.default",
+  "timeout": 6,
+  "memorySize": 1024,
+  "authorizer": {},
+  "custom": {
+    "excludePatterns": [],
+    "runtime": {
+      "babel": {
+        "presets": [
+          "es2015",
+          "stage-0"
+        ],
+        "plugins": [
+          "transform-runtime"
+        ]
+      }
+    }
+  },
+  "endpoints": [],
+  "events": [
+    {
+      "name": "empireEvent",
+      "type": "sns",
+      "config": {
+        "topicName": "${empireEventsTopicName}"
+      }
+    }
+  ],
+  "environment": {
+    "SERVERLESS_PROJECT": "${project}",
+    "SERVERLESS_STAGE": "${stage}",
+    "SERVERLESS_REGION": "${region}",
+    "WEBHOOK_URL": "${empireEventsWebhookUrl}"
+  },
+  "vpc": "$${vpcParametersTemplate}"
+}

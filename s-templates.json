@@ -1,0 +1,11 @@
+{
+  "vpcParametersTemplate": {
+    "securityGroupIds": [
+      "${defaultSG}"
+    ],
+    "subnetIds": [
+      "${privateSubnet1}",
+      "${privateSubnet2}"
+    ]
+  }
+}

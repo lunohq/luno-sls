@@ -1,0 +1,47 @@
+{
+  "name": "new-user",
+  "runtime": "babel",
+  "description": "Serverless Lambda function for project: luno",
+  "customName": false,
+  "customRole": false,
+  "handler": "handlers/sns/new-user/handler.default",
+  "timeout": 6,
+  "memorySize": 1024,
+  "authorizer": {},
+  "custom": {
+    "excludePatterns": [],
+    "runtime": {
+      "babel": {
+        "presets": [
+          "es2015",
+          "stage-0"
+        ],
+        "plugins": [
+          "transform-runtime"
+        ]
+      }
+    }
+  },
+  "endpoints": [],
+  "events": [
+    {
+      "name": "newUserNotification",
+      "type": "sns",
+      "config": {
+        "topicName": "${newUserTopicName}"
+      }
+    }
+  ],
+  "environment": {
+    "SERVERLESS_PROJECT": "${project}",
+    "SERVERLESS_STAGE": "${stage}",
+    "SERVERLESS_REGION": "${region}",
+    "SERVERLESS_FUNCTION": "new-user",
+    "STAGE": "${stage}",
+    "WEBHOOK_URL": "${webhookUrl}",
+    "AWS_REGION": "${region}",
+    "SENTRY_DSN": "${sentryDSN}",
+    "SLACK_CHANNEL": "${slackChannel}"
+  },
+  "vpc": "$${vpcParametersTemplate}"
+}

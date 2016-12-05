@@ -1,0 +1,17 @@
+{
+  "name": "new-user",
+  "version": "0.0.1",
+  "description": "lambda for handling new users",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bufferutil": "^1.2.1",
+    "hiredis": "^0.4.1",
+    "luno-core": "git+https://1d0cdee693b540fb3b9cd603b01834ec45976ce9:x-oauth-basic@github.com/lunohq/luno-core.git#v1.3.0",
+    "utf-8-validate": "^1.2.1"
+  }
+}
